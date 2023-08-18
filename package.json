@@ -1,0 +1,48 @@
+{
+  "name": "circle-sass",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "pm2 start ./dist/index",
+    "dev": "ts-node-dev -r tsconfig-paths/register ./index",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "zongzheng123",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.0.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/sensible": "^5.0.0",
+    "@fastify/static": "^6.10.2",
+    "@fastify/swagger": "^8.9.0",
+    "@fastify/swagger-ui": "^1.9.3",
+    "@trpc/client": "^10.37.1",
+    "@trpc/server": "^10.37.1",
+    "fastify": "^4.0.0",
+    "fastify-cli": "^5.8.0",
+    "fastify-plugin": "^4.0.0",
+    "trpc-openapi": "^1.2.0",
+    "zod": "^3.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "pm2": "^5.3.0",
+    "tap": "^16.1.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
